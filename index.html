@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Music Producer Survey</h1>
+    <p id="description">Are you a music producer? We want to know!</p>
+<form id="survey-form">
+    <div class="form-group">
+      <label id="name-label">Name</label> 
+        <input 
+         type="text" 
+         id="name" 
+         name="name"
+         class="form-control" 
+         placeholder="please enter your name" 
+         required> 
+    </div> 
+    <div class="form-group">  
+      <label id="email-label">Email</label> 
+        <input 
+         type="email" 
+         id="email" 
+         name="email" 
+         class="form-control"
+         placeholder="please enter your email" 
+         required> 
+    </div>
+    <div class="form-group">
+     <label id="number-label">Age</label> 
+        <input 
+         type="number" 
+         id="number" 
+         name="number"
+         min="5"
+         max="120"
+         class="form-control" 
+         placeholder="age" 
+         required>
+    </div>
+    <div class="form-group">
+    <pa>Which digital audio workstaion (DAW) do you use?</pa>
+     <select id="dropdown">
+        <option disabled selected value>Select a DAW</option>
+        <option value="FL">FL Studio</option>
+        <option value="ableton">Ableton</option>
+        <option value="logic">Logic Pro</option>
+        <option value="studio">Studio One</option>
+        <option value="cubase">Cubase</option>
+        <option value="pt">Pro Tools</option>
+        <option value="reason">Reason</option>
+        <option value="garage">Garageband</option>
+        <option value="other">Other</option>
+     </select>   
+    </div>
+    <div class="form-group">
+    <p>What is your level of production experience?</p>
+      <label>
+       <input 
+        type="radio"
+        value="beginner"
+        name="input-radio"
+        >Beginner</label>
+      <label>
+       <input 
+        type="radio"
+        value="intermediate"
+        name="input-radio"
+        >Intermediate</label>
+      <label>
+       <input 
+       type="radio"
+       value="expert"
+       name="input-radio"
+       >Expert</label>    
+    </div>
+    <div class="form-group">
+    <p>What genre or genres of music do you produce?</p>
+      <label>
+        <input 
+        type="checkbox"
+        value="hip-hop">Hip-Hop
+      </label>
+      <label>
+        <input 
+        type="checkbox"
+        value="Rock">Rock
+      </label>
+      <label>
+        <input 
+        type="checkbox"
+        value="alt">Alternative
+      </label>
+      <label>
+        <input 
+        type="checkbox"
+        value="pop">Pop
+      </label>
+      <label>
+        <input 
+        type="checkbox"
+        value="rnb">RnB
+      </label>
+      <label>
+        <input 
+        type="checkbox"
+        value="edm">EDM
+      </label>
+      <label>
+        <input 
+        type="checkbox"
+        value="jazz">Jazz
+      </label>
+      <label>
+        <input 
+        type="checkbox"
+        value="country">Country
+      </label>
+    </div>
+    <div class="form-group">
+    <p>What tools would improve your music production? </p>
+     <textarea
+     id="comment"
+     class="input-text"
+     name="comment"
+     rows="3"
+     cols="45"
+     placeholder="enter your response here..."
+     ></textarea>
+    </div>
+    <div class="form-group">
+     <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+
+    </form>
+     
+
+</body>
+</html>
